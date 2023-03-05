@@ -20,10 +20,7 @@ public class US03_StepDefs {
 
     @Given("I login as a librarian")
     public void i_login_as_a_librarian() {
-        login_page.login(ConfigurationReader.getProperty("librarian_email"),ConfigurationReader.getProperty("librarian_password"));
-        //     login_page.emailAddress.sendKeys(ConfigurationReader.getProperty("librarian_email"));
-        //   login_page.password.sendKeys(ConfigurationReader.getProperty("librarian_password"));
-        //   login_page.submit.click();
+        login_page.login(ConfigurationReader.getProperty("librarian_username"),ConfigurationReader.getProperty("librarian_password"));
     }
 
     @Given("I click on {string} link")
