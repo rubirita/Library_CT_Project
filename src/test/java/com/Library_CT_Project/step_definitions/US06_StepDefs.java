@@ -17,7 +17,7 @@ public class US06_StepDefs {
     @When("I login using {string} and {string}")
     public void iLoginUsingAnd(String userName, String password) {
 
-        loginPage.login(userName,password);
+        loginPage.login(userName, password);
 
     }
 
@@ -25,8 +25,8 @@ public class US06_StepDefs {
     public void accountHolderNameShouldBe(String expectedName) {
 
 
-        String actualName=loginPage.nameOfUser.getText();
-        Assert.assertEquals(actualName,expectedName);
+        String actualName = loginPage.nameOfUser.getText();
+        Assert.assertEquals(actualName, expectedName);
 
         System.out.println(actualName);
         System.out.println(expectedName);
@@ -38,8 +38,8 @@ public class US06_StepDefs {
     @Then("account holder name is librarian should be {string}")
     public void accountHolderNameIsLibrarianShouldBe(String librarianName) {
 
-        String actualLibrarianName=loginPage.nameofLibrarian.getText();
-        Assert.assertEquals(actualLibrarianName,librarianName);
+        String actualLibrarianName = loginPage.nameofLibrarian.getText();
+        Assert.assertEquals(actualLibrarianName, librarianName);
     }
 }
 
