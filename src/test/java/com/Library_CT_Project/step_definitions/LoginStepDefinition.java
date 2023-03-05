@@ -25,6 +25,7 @@ public class LoginStepDefinition {
             password = ConfigurationReader.getProperty("librarian_password");
         }
         //send username and password and login
+        //call loginPage (object).login(username, password)
         new LoginPage().login(username,password);
     }
 
