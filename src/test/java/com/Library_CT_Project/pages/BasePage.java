@@ -33,10 +33,11 @@ public abstract class BasePage {
     @FindBy(linkText = "My User")
     public WebElement myUser;
 
-    //Library project - some located web elements:
+    //Library project - some located web elements: dashboardButton, User/Books Button
 
     @FindBy(xpath = "//a[@class='navbar-brand']")
     public List<WebElement> libraryMain;
+
 
     @FindBy(xpath = "//span[text()='Dashboard']")
     protected WebElement dashboardButton;
