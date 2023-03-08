@@ -2,6 +2,7 @@ package com.Library_CT_Project.step_definitions;
 
 import com.Library_CT_Project.pages.DashboardPageSG;
 import com.Library_CT_Project.pages.LoginPage;
+import com.Library_CT_Project.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -14,9 +15,11 @@ public class US10_StepDefs {
 
 
 
+
+
     @When("I enter username {string}")
-    public void iEnterUsername(String arg0) {
-        loginPage.emailAddress.sendKeys("librarian11@library");
+    public void iEnterUsername(String username) {
+        loginPage.emailAddress.sendKeys(username);
 
     }
 
@@ -35,6 +38,8 @@ public class US10_StepDefs {
 
 
         dashboardPageSA.Dashboard.isDisplayed();
+
+
 
     }
 
