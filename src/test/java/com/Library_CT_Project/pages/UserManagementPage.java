@@ -33,16 +33,13 @@ public class UserManagementPage extends BasePage {
     @FindBy(xpath="//input[@type='search']")
     public WebElement searchBox;
 
-
-
-
-    @FindBy(xpath = "//*[@id=\"tbl_users\"]/tbody/tr/td[2]")
+    @FindBy(xpath = "//table[@id='tbl_users']/tbody/tr/td[2]")
     public WebElement accountHolderID;
 
-    @FindBy(xpath = "//*[@id=\"tbl_users\"]/tbody/tr/td[3]")
+    @FindBy(xpath = "//table[@id='tbl_users']/tbody/tr/td[3]")
     public WebElement accountHolderFullName;
 
-    @FindBy(xpath = "//*[@id=\"tbl_users\"]/tbody/tr/td[4]")
+    @FindBy(xpath = "//table[@id='tbl_users']/tbody/tr/td[4]")
     public WebElement accountHolderEmail;
 
 
