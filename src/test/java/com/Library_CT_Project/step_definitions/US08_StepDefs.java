@@ -3,6 +3,7 @@ package com.Library_CT_Project.step_definitions;
 import com.Library_CT_Project.pages.BasePage;
 import com.Library_CT_Project.pages.LoginPage;
 import com.Library_CT_Project.pages.UserManagementPage;
+import com.Library_CT_Project.utilities.BrowserUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -26,7 +27,8 @@ public class US08_StepDefs extends BasePage {
     @When("I search for {string}")
     public void iSearchFor(String ID) {
 
-      userManagementPage.searchBox.sendKeys(ID);
+      userManagementPage.searchBox.sendKeys(ID); //user search for ID  7587
+        BrowserUtils.sleep(2);
     }
 
     @Then("Table should contain {string}, {string}, {string} data")
