@@ -9,7 +9,6 @@ import org.junit.Assert;
 public class US06_StepDefs {
 
     LoginPage loginPage = new LoginPage();
-
     @Given("I am on the login page")
     public void iAmOnTheLoginPage() {
     }
