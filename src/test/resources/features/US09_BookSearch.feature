@@ -1,5 +1,5 @@
 Feature: books search
-
+@US09
   Scenario: Verify book search results
     Given I am on the login page
     And the user logged in as "student"
