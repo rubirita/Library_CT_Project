@@ -2,6 +2,7 @@ package com.Library_CT_Project.pages;
 
 
 import com.Library_CT_Project.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -51,5 +52,8 @@ public abstract class BasePage {
     @FindBy(xpath = "//a[text()='Log Out']")
     public WebElement logOutButton;
 
-
+    public void navigateTo(String page) {
+        WebElement linkToPage = Driver.getDriver().findElement(By.xpath("//span[.='" + page + "']"));
+        linkToPage.click();
+    }
 }
