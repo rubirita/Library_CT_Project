@@ -1,5 +1,4 @@
-
-
+@wip
 Feature: User valid login
   Scenario Outline: Verify user information email
     Given I am on the login page
@@ -14,6 +13,3 @@ Feature: User valid login
       | student28@library | libraryUser | Test Student 28 |
       | student29@library | libraryUser | Test Student 29 |
       | student30@library | libraryUser | Test Student 30 |
-
-
-
