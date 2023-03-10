@@ -9,7 +9,7 @@ Feature: Search new users dialog
 
 
 
-  Scenario Outline: verify user information
+  Scenario Outline: verify user information FH
      And I click "Users" Link
      When I search for "7587"
      Then Table should contain "<userID>", "<fullName>", "<email>" data
