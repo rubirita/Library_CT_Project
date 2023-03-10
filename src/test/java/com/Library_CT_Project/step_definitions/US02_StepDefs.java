@@ -27,9 +27,7 @@ public class US02_StepDefs{
         loginPage.login(ConfigurationReader.getProperty("librarian_username"), ConfigurationReader.getProperty("librarian_password"));
     }
     @When("I click on \"Users\" link_AS")
-    public void i_click_on_link_as() {
-        userPage.usersButton.click();
-    }
+    public void i_click_on_link_as() {userPage.usersButton.click();}
     @Then("show records default value should be {int}")
     public void show_records_default_value_should_be(int defaultValue) {
 
