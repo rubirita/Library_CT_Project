@@ -9,7 +9,7 @@ Feature: Search functionality on the users page
 
   Scenario: Search accuracy
     When i search for "test"
-    Then table should contain rows with "tests"
+    Then table should contain rows with "test"
 
   Scenario: Table columns names
     Then table should have following column names:
