@@ -1,3 +1,4 @@
+@wip
 Feature: User valid login
   Scenario Outline: Verify user information email
     Given I am on the login page
